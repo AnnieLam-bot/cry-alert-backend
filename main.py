@@ -12,7 +12,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-MODEL_NAME = "Wiam/baby-cry-classification-finetuned-babycry-v4"
+MODEL_NAME = "MIT/ast-finetuned-audioset-10-10-0.4593"
 
 print(f"載入模型中：{MODEL_NAME}...")
 classifier = pipeline("audio-classification", model=MODEL_NAME)
